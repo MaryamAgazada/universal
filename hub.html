@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mogra&family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="hub.css">
+</head>
+<body>
+    <nav class="nav">
+        <p class="nav__logo">Universal Hub</p>
+       <ul class="nav__links">
+        <li class="nav__item " href="#section--1">Home</li>
+        <li class="nav__item "  href="#section--2">About Us</li>
+        <li class="nav__item "  href="#section--3">Courses</li>
+        <li class="nav__item btn--show-modal" href="#section--3">Contact me</li>
+       </ul>
+    </nav>
+    <main>
+        <section class="section " id="section--1" >
+            <video src="img/brain-video.mp4" class="hero__video" autoPlay loop muted></video>
+            <!-- <hr/> -->
+           <div class="txt"><h1 class="hero__text">What is the purpose of Universal Hub?</h1></div> 
+        </section>
+       
+        <section class="section"id="section--2" >
+            <h2 class="sec-text">About Us</h2>
+            <!-- <hr class="line"/> -->
+            <div class="card">
+                <img src="img/./top-view-online-psychologist-concept.jpg" class="s2__img" alt="Minimalist bank items">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing eis animi nemo aut iste ipsum praesentium et <br/>odit, quos quam. Adipisci magni ipsum recusandae laborum assumenda repudiandae voluptatibus nulla eveniet dolor?</p>
+            </div>
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing eis animi nemo aut iste ipsum praesentium et <br/>odit, quos quam. Adipisci magni ipsum recusandae laborum assumenda repudiandae voluptatibus nulla eveniet dolor?</p>
+                <img src="img/./neurologist_3.jpg" class="s2__img" alt="Minimalist bank items">
+
+            </div>
+            <div class="card">
+                <img src="img/./9551403.jpg" class="s2__img" alt="Minimalist bank items">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing eis animi nemo aut iste ipsum praesentium et <br/>odit, quos quam. Adipisci magni ipsum recusandae laborum assumenda repudiandae voluptatibus nulla eveniet dolor?</p>
+            </div>
+
+        </section>
+
+        <section class="section" id="section--3" >
+            <h2 class="sec-text">Courses</h2>
+            <div class="courses">
+                <div class="course">
+                    <img src="img/65393-OBH3VY-9.jpg" 
+                    class="course__img"/>
+                    <h3 class="course-text">Neuro-linguistic programming :</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br/> Quas quis minima ut dolorum dolor tempore fuga, ea unde<br/> perferendis adipisci excepturi delectus fugiat suscipit, velit animi<br/> amet maiores nobis dicta?</p>
+                </div>
+                <div class="course">
+                    <img src="img/7624538.jpg" 
+                    class="course__img"/>
+                    <h3 class="course-text">English language:</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br/> Quas quis minima ut dolorum dolor tempore fuga, ea unde<br/> perferendis adipisci excepturi delectus fugiat suscipit, velit animi<br/> amet maiores nobis dicta?</p>
+
+                </div>
+            </div>
+
+
+        </section>
+        <footer class="footer">
+            <ul class="footer__nav">
+              <h1 class="footer--logo ">Universal Hub</h1>
+              <li class="footer__item">
+                <a class="footer__link" href="#section--1">Home</a>
+                  </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#section--2">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#section--3">Courses</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#section--4">Contact Me</a>
+              </li>
+            </ul>
+          </footer>
+      
+        
+        <div class="modal hidden" id="section--4">
+            <button class="btn--close-modal">&times;</button>
+            <h2 class="modal__header">
+                Register now  <br />
+                from  <span class="highlight">Universal Hub</span>
+            </h2>
+            <form class="modal__form">
+              <label>First Name</label>
+              <input type="text" />
+              <label>Last Name</label>
+              <input type="text" />
+              <label>Phone</label>
+              <input type="text" />
+              <label>message</label>
+              <input type="email" />
+              <!-- <button class="btn">Next step &rarr;</button> -->
+            </form>
+          </div>
+          <div class="overlay hidden"></div>
+    </main>
+    <script src="./hub.js"></script>
+</body>
+</html>
